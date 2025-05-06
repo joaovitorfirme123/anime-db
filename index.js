@@ -1,3 +1,4 @@
+const fs = require('fs');
 const animes = []
 
 function insertAnimeInDB({id, name, categories, ageClassification, resume}) {
@@ -10,11 +11,11 @@ function insertAnimeInDB({id, name, categories, ageClassification, resume}) {
         review: []
     }
     animes.push(anime)
-    console.log("Anime added:", anime)
+    //console.log("Anime added:", anime)
 }
 
 function listAnimes(animes) {
-    console.log("My animes:", animes)
+   // console.log("My animes:", animes)
 }
 
 insertAnimeInDB({
@@ -26,3 +27,14 @@ insertAnimeInDB({
 })
 
 listAnimes(animes)
+
+fs.writeFile('animes.json', JSON.stringify(animes, null, 2), (err) => {
+    if (err) throw err
+    console.log('Anime has been saved!')
+})
+
+fs.readFile('animes.json', 'utf8', (err, animes) => {
+    if (err) throw err;
+    const jsonAnimes = JSON.parse(animes)
+    console.log(jsonAnimes)
+})

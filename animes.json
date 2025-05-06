@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Naruto",
+    "categories": [
+      "Shounen",
+      "Adventure",
+      "Comedy"
+    ],
+    "ageClassification": 12,
+    "resume": "one kid with foxy inside of him, dattebayo",
+    "review": []
+  }
+]
