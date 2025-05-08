@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Naruto",
+    "categories": [
+      "Shounen",
+      "Adventure",
+      "Comedy"
+    ],
+    "ageClassification": 12,
+    "resume": "one kid with foxy inside of him, dattebayo",
+    "review": []
+  },
+  {
+    "id": 2,
+    "name": "Dragon Ball",
+    "categories": [
+      "Shounen",
+      "Adventure",
+      "Comedy"
+    ],
+    "ageClassification": 12,
+    "resume": "One monkey with super powers",
+    "review": []
+  },
+  {
+    "id": 3,
+    "name": "One Piece",
+    "categories": [
+      "Shounen",
+      "Adventure",
+      "Comedy"
+    ],
+    "ageClassification": 12,
+    "resume": "One monkey with body of rubber",
+    "review": []
+  }
+]
